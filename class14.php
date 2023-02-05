@@ -12,9 +12,12 @@ if(12 == $n) {
 
 echo "\n";
 
-$numberInWord = (12 == $n) ? "Twelve" : (10 == $n) ? "Ten" : "A Number";
+$numberInWord = (12 == $n) ? "Twelve" : ((10 == $n) ? "Ten" : "A Number");
+
+
 
 echo $numberInWord;
 
 $result = ($n % 2 == 0) ? "Even Number" : "Odd Number";
 echo "\n".$result;
+
