@@ -20,3 +20,12 @@ else :
     echo PHP_EOL;
     echo "Some more Text";
 endif;
+
+echo PHP_EOL;
+switch ($n%2 == 0) :
+    case 0 :
+        echo "Even number";
+        break;
+    default :
+        echo "Odd number";
+endswitch;
