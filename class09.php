@@ -21,3 +21,10 @@ printf("%04d \n",$n);
 
 $m = 127.34; //0127.35
 printf("%07.2f \n", $m);
+
+if (a == b)
+    {
+        "key" => 20
+   "key2" => 30
+    echo "hello";
+}
