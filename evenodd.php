@@ -1,7 +1,7 @@
 <?php
-//EVEN OR ODD
+//DETERMINE IF THE ARGUMENT IS EVEN OR ODD
 
-function evenOrOdd($n){
+function isEven($n){
     if($n%2==0){
         return true;
     }
@@ -10,7 +10,7 @@ function evenOrOdd($n){
 
 //Function Call
 $x = 88;
-if(evenOrOdd($x)){
+if(isEven($x)){
     echo "{$x} is EVEN Number";
 } else {
     echo "{$x} is ODD Number";
