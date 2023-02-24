@@ -76,3 +76,15 @@ class Son1 extends Father1{
 }
 $obj = new Son1();
 $obj->addTwo();
+
+class Fruit {
+  public $name;
+  protected $color;
+  private $weight;
+}
+
+$mango = new Fruit();
+$mango->name = 'Mango'; // OK
+//$mango->color = 'Yellow'; // ERROR
+//$mango->weight = '300'; // ERROR
+?> 
