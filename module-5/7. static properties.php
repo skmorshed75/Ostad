@@ -1,7 +1,7 @@
 <?php
 //7. static properties.php
 
-class pi{
+class Pi{
     public static $value = 3.14159;
 }
 
@@ -16,17 +16,17 @@ class pi2{
     public static $value = 3.14159;    
 }
 
-class x extends pi2{
+class X extends pi2{
     public function xStatic(){
         return parent::$value;
     }    
 }
 
 echo PHP_EOL;
-echo x::$value; // Get value of static property directly via child class
+echo X::$value; // Get value of static property directly via child class
 
 echo PHP_EOL;
-$x= new x();
+$x= new X();
 echo $x->xStatic();
 
 
