@@ -1,0 +1,39 @@
+<!-- 
+LIVE TEST DATED 03.04.2023
+MODULE - 09
+Sheikh Mohammed Morshed
+
+Problem :
+Write a CSS rule that creates a keyframe animation that scales a div element from 0 to 1, and rotates it 360 degrees clockwise, in 2 seconds.
+-----------------------------------------------------------------------------------------
+-->
+
+<div class="container">
+    <div class="box">
+</div>
+</div>
+
+<style>
+    .box {
+        margin-left: 600px;
+        margin-top: 300px;
+    animation: loader 1.25s infinite;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    color: #00136c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    @keyframes loader {
+    0% {
+        transform: scale(0) rotate(0deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}    
+</style>
+  

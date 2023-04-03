@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- create a html page that display a table with two columns : 'name' and 'age'. The table should have 3 rows with following information : John, 25 Sarah, 30 and Mike, 28. also, add a form that users name and age and has a submit button that displays the users input in the table -->
+	<title>Live Test, Module 08, dated : 27.03.2023, submitted by : Sheikh Mohammed Morshed</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>Table with Name and Age</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<td>Sarah</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>Mike</td>
+				<td>28</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<h2>Add a new entry</h2>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age"><br><br>
+		<input type="button" value="Submit" onclick="addEntry()">
+	</form>
+	
+	<script>
+		function addEntry() {
+			var name = document.getElementById("name").value;
+			var age = document.getElementById("age").value;
+			var table = document.getElementsByTagName("table")[0];
+			var newRow = table.insertRow(-1);
+			var nameCell = newRow.insertCell(0);
+			var ageCell = newRow.insertCell(1);
+			nameCell.innerHTML = name;
+			ageCell.innerHTML = age;
+		}
+	</script>
+</body>
+</html>
