@@ -1,0 +1,170 @@
+/* https://www.youtube.com/watch?v=DFUT5s5SasA */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;800&display=swap');
+
+*{
+  font-family: 'poppins', sans-serif;
+  
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-item {
+  height: 95vh;
+  min-height: 300px;
+}
+
+.carousel-caption{
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5{
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p{
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0,0,0,0.7);
+  z-index: 1;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-light.navbar-brand {
+  color: #000;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar-light.navbar-brand:focus, 
+.navbar-light.navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+  color: #000;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+
+/* Responsive CSS */
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    bottom: 370px;
+  }
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 25px;
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 125px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 25px;
+
+  }
+}
+
+/* ABOUT SECTION */
+.about-img {
+  max-width: 100%;
+  overflow: hidden;
+}
+.about-img img {
+  background-size: cover;
+  /*! width: auto; */
+  width: 100%;
+}
+
+/*SERVICES SECTION*/
+.card-body {
+  padding: 25px;
+}
+.card-body h3 {
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.card-body p {
+  font-size: 16px;
+  line-height: 2;
+}
+.section-header h2, .about-text h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.section-header p, .about-text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.btn {
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #fff;
+}
