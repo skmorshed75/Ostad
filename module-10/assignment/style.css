@@ -100,6 +100,14 @@
     margin-bottom: 25px;
 
   }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .img-area img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -145,13 +153,19 @@
 .card-body h3 {
   font-weight: 300;
   font-size: 30px;
-  text-transform: uppercase;
   margin-bottom: 15px;
 }
 .card-body p {
   font-size: 16px;
   line-height: 2;
 }
+
+.card-body .bi {
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: block;
+}
+
 .section-header h2, .about-text h2 {
   font-weight: 700;
   font-size: 40px;
@@ -168,3 +182,28 @@
 .btn:hover {
   background-color: #fff;
 }
+
+.portfolio .card {
+  box-shadow: 15px 15px 40px rgba(0,0,0,0.5);
+}
+
+
+/*BLOG POSTS*/
+
+.blog .card-title {
+  font-size: 27px;
+  letter-spacing: 1;
+  }
+
+  .contact .btn {
+    /*! display: block; */
+    width: auto;
+  }
+  
+  .footer {
+    padding: 20px 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
