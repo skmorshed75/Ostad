@@ -1,4 +1,9 @@
 /*
+MODULE - 11
+Submitted by : Sheikh Mohammed Morshed
+
+ASSIGNMENT :
+------------
 Question : Write a program that generates a multiplication table for a given number using a for loop.
 
 Instructions:
@@ -13,6 +18,7 @@ Log the product to the console in the format "num x iteration = product".
 Test the function with different input numbers to generate multiplication tables.
 
 SOLUTION :
+----------
 */
 
 function multiplicationTable(num) {
