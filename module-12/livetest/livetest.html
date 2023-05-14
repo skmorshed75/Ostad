@@ -1,0 +1,39 @@
+<!-- 
+//MODULE 12, LIVE TEST
+//Sheikh Mohammed Morshed
+/*
+Question
+Write a JavaScript function that selects an element with an id of "myList" and adds a new list item with the text "Apples" to the end of the list
+ 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="addListItem()">Add Apples</button>
+  <div id="listResult"></div>
+
+  <script>
+  function addListItem() {
+    // Get the unordered list element by its ID
+    const list = document.getElementById("myList");
+
+    // Create a new list item element and set its text to "Apples"
+    const listItem = document.createElement("li");
+    const listItemText = document.createTextNode("Apples");
+    listItem.appendChild(listItemText);
+
+    // Add the new list item to the end of the unordered list
+    list.appendChild(listItem);
+
+    // Display the updated list in HTML
+    document.getElementById("listResult").innerHTML = list.innerHTML;
+  }
+  </script>
+</body>
+</html>
